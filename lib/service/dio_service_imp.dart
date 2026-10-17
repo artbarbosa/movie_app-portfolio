@@ -11,7 +11,7 @@ class DioServiceImp implements DioService {
         headers: {
           'content-type': 'application/json;charset=utf-8',
           'authorization':
-              'Bearer PORTFOLIO_REMOVED_API_TOKEN',
+              'Bearer ${const String.fromEnvironment("TMDB_READ_ACCESS_TOKEN")}',
         },
       ),
     );
